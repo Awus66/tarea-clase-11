@@ -96,7 +96,6 @@ function destaparCuadro($cuadro) {
 function evaluarFinDeJuego() {
     if (document.querySelectorAll('.cuadro').length === 0) {
         $tablero.remove();
-        document.querySelector('body').classList.add('vh-100');
         $mensajeFinJuego.querySelector('strong').textContent = turnos.toString();
         $mensajeFinJuego.style.display = 'block';
     }
