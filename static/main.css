@@ -6,9 +6,77 @@
     border: 0.5px solid grey;
 }
 
+
+.correcto {
+    background-color: transparent;
+}
+
+
+.cuadro {
+    opacity: 0;
+    transition: opacity ease 0.2s;
+    cursor: pointer;
+    border: 0.5px solid grey;
+}
+
+
+.oculto {
+    background-color: white;
+    background-size: cover;
+}
+
+
+#fin-juego {
+    text-align: center;
+    color: white;
+}
+
+
 body {
     background-image: url(background.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
+}
+
+
+.bootstrap {
+    background-image: url(bootstrap-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.javascript {
+    background-image: url(javascript-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.html {
+    background-image: url(html-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.css {
+    background-image: url(css-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.nextjs {
+    background-image: url(nextjs-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+
+.react {
+    background-image: url(react-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
