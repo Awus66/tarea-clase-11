@@ -36,7 +36,10 @@ function manejarEleccion(e){
             if ($primerCuadro === $cuadroActual){
                 return;
             }
+
             turnos++;
+            $mensajeFinJuego.querySelector('#turnos').textContent = turnos.toString();
+
             if ($primerCuadro.className === $cuadroActual.className){
                 eliminar($primerCuadro);
                 eliminar($cuadroActual);
@@ -95,8 +98,7 @@ function destaparCuadro($cuadro) {
 
 function evaluarFinDeJuego() {
     if (document.querySelectorAll('.cuadro').length === 0) {
-        $tablero.remove();
-        $mensajeFinJuego.querySelector('strong').textContent = turnos.toString();
+        $tablero.style.display = 'none';
         $mensajeFinJuego.style.display = 'block';
     }
 }
