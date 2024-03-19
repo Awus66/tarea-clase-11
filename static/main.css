@@ -27,6 +27,7 @@
 
 
 #fin-juego {
+    display: none;
     text-align: center;
     color: white;
 }
