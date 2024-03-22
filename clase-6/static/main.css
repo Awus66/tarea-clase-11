@@ -1,0 +1,24 @@
+#errores {
+    color: red ;
+}
+
+
+.error {
+    border-color: red;
+}
+
+div {
+    background-color: white;
+    border-radius: 10%;
+}
+
+
+body {
+    background-color: lightgrey;
+}
+
+
+.familiar {
+    background-color:aliceblue;
+    display: block;
+}
