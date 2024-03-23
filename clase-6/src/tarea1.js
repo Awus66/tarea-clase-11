@@ -70,6 +70,7 @@ function validarCantidadFamiliares(){
         $inputFamiliares.className = '';
         limpiarFamiliares();
         $error.innerHTML = "";
+        mostrar('#familiares');
 
         for (let i = 1; i <= cantidadFamiliares; i++) {
             const $nuevoLabel = document.createElement('label');
@@ -121,6 +122,7 @@ function resetear(){
     ocultar('#boton-calcular');
     ocultar('#boton-resetear');
     ocultar('#resultados');
+    ocultar('#familiares');
     habilitarInput('#cantidad-familiares')
     borrarMensajesDeError();
 }
