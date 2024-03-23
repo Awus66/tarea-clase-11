@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/main.css">
+    <title>Tarea 1 Clase 6</title>
+</head>
+<body>
+    <form>
+        <div class="container p-3 w-50 mt-4 text-center min-vh-100 align-items-center justify-content-center">
+            <label class="form-label" for="cantidad-familiares" style="font-size:1.3rem">Cantidad de gente en el grupo familiar</label><br>
+            <input aria-describedby="errores" class="form-control" id="cantidad-familiares" min="0" max="99" placeholder="Cantidad">
+            <div class="p-2" id="familiares">
+
+            </div>
+            <ul id="errores" class="form-text">
+            </ul>
+            <button class="btn btn-lg btn-primary" type="button" id="boton-enviar">Enviar</button>
+            <button class="btn btn-primary" type="button" id="boton-calcular" style="display:none">Calcular</button>
+            <button class="btn btn-primary" type="reset" id="boton-resetear" style="display:none">Resetear</button>
+            <div class="p-3" id="resultados" style="display:none">
+                <em id="mayor-edad"></em><br>
+                <em id="menor-edad"></em><br>
+                <em id="promedio-edad"></em><br>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript" src="src/tarea1.js"></script>
+    <script type="text/javascript" src="src/pruebas-tarea1.js"></script>
+</body>
+</html>
+
+<!--
+TAREA: Empezar preguntando cuánta gente hay en el grupo familiar.
+Crear tantos inputs+labels como gente haya para completar la edad de cada integrante.
+Al hacer click en "calcular", mostrar en un elemento pre-existente la mayor edad, la menor edad y el promedio del grupo familiar.
+
+Punto bonus: Crear un botón para "empezar de nuevo" que empiece el proceso nuevamente, borrando los inputs ya creados (investigar cómo en MDN).
+
