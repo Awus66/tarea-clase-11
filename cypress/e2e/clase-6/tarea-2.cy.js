@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-const URL = '127.0.0.1:8080/tarea2.html';
+const URL = '127.0.0.1:8080/clase-6/tarea2.html';
 
 context('Formulario de sueldos de familiares',{ testIsolation: false }, () =>{
     before(() =>{

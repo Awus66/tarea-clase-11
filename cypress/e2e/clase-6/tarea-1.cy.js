@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-const URL = '127.0.0.1:8080/tarea1.html';
+const URL = '127.0.0.1:8080/clase-6/tarea1.html';
 
 context('Formulario de edades de familiares',{ testIsolation: false }, () =>{
     before(() =>{
