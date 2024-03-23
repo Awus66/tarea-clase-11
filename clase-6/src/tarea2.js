@@ -52,6 +52,7 @@ function validarSueldos() {
         const valorSueldo = Number(sueldo.value);
         if(Number.isInteger(valorSueldo) && valorSueldo > 0 && /^[0-9]+$/.test(valorSueldo)){
             sueldos.push(valorSueldo); 
+            sueldo.classList.remove('error');
         }
         else{
             sueldo.classList.add('error');
@@ -62,6 +63,7 @@ function validarSueldos() {
 
     const hayError = cantidadErrores !== 0;
     if (!hayError){
+        borrarMensajesDeError();
         const mayorSueldo = Math.max(...sueldos);
         const menorSueldo = Math.min(...sueldos);
         const promedioSueldos = calcularPromedio(sueldos);
